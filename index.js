@@ -13,8 +13,9 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 
 app.get('/', async (req, resp) => {
 
-    let data = await fetch(" https://newsapi.org/v2/top-headlines?country=in&apiKey=e0afc93feba64fbaa041d5d53f687985")
-    data = await data.json()
+    // let data = await fetch(" https://newsapi.org/v2/top-headlines?country=in&apiKey=e0afc93feba64fbaa041d5d53f687985")
+    // data = await data.json()
+let data="hii"
     // resp.sendFile(`${master_path}/home.html`)
     resp.send(data)
     console.log(data)
