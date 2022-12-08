@@ -22,4 +22,6 @@ app.get('/', async (req, resp) => {
 
 })
 
-app.listen(port)
+app.listen(port,()=>{
+    console.log("you are live brooo on port "+port);
+})
